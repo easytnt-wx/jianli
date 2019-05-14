@@ -1,5 +1,5 @@
 初始化项目
-npm install /n
+npm install
 运行
 npm run serve
 编译
