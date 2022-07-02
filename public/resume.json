@@ -13,7 +13,7 @@
     "lastName": "Wang",
     "slogan": "认真对待每件事，细心做好每件事，坚持努力做一件事！",
     "tips": "Ctrl+p可以印简历",
-    "education": "本科",
+    "education": "专科",
     "phone": 17352855603,
     "location": "湖南 · 长沙",
     "qq": {
@@ -43,23 +43,22 @@
                 "Pinia",
                 "Vue Router",
                 "Axios",
+                "微信小程序",
+                "uniapp",
                 "Webpack",
                 "Fiddler",
+                "Postman",
+                "Xshell",
                 "jquery",
                 "RequireJS",
                 "NodeJS",
-                "Mysql",
                 "Nginx",
                 "Docker",
                 "Sublime Text",
                 "Vscode",
                 "HBuilder",
-                "Idea",
                 "微信开发者工具",
-                "Postman",
-                "Xshell",
-                "Git",
-                "Svn"
+                "Git"
             ]
         }
     },
@@ -149,6 +148,22 @@
             "percent": "90%"
         },
         {
+            "name": "Vue全家桶",
+            "percent": "90%"
+        },
+        {
+            "name": "微信小程序",
+            "percent": "95%"
+        },
+        {
+            "name": "uniapp",
+            "percent": "95%"
+        },
+        {
+            "name": "Fiddler",
+            "percent": "95%"
+        },
+        {
             "name": "Scss",
             "percent": "90%"
         },
@@ -165,27 +180,7 @@
             "percent": "90%"
         },
         {
-            "name": "NodeJS",
-            "percent": "70%"
-        },
-        {
-            "name": "Vue",
-            "percent": "90%"
-        },
-        {
             "name": "Webpack",
-            "percent": "80%"
-        },
-        {
-            "name": "Mysql",
-            "percent": "60%"
-        },
-        {
-            "name": "Nginx",
-            "percent": "80%"
-        },
-        {
-            "name": "Docker",
             "percent": "80%"
         },
         {
@@ -193,11 +188,11 @@
             "percent": "90%"
         },
         {
-            "name": "Svn",
-            "percent": "70%"
+            "name": "Nginx",
+            "percent": "80%"
         },
         {
-            "name": "Postman",
+            "name": "Docker",
             "percent": "80%"
         }
     ],
@@ -217,9 +212,8 @@
                 {
                     "title": "负责的功能模块",
                     "content": [
-                        "根据UI设计师提供的设计稿重构2.0产品，1:1还原设计稿输出前端页面",
                         "用户登录。通过教育云平台单点登录系统，再根据教育云系统的用户角色路由到不同的用户界面",
-                        "考试列表。根据用户角色渲染参与的考试列表(正在阅卷的考试，刚创建的考试，评阅完成的考试)",
+                        "考试列表。根据用户角色渲染参与的考试列表",
                         "创建考试。考试分单科考试与多科考试，根据考试类型不同分周练，月考，期中期末考等等",
                         "考试详情。主要展示考试时间、考试创建人、考试名称。可以设置考试名称、考生管理、考生管理员、阅卷老师。可以增加/删除考试科目。",
                         "考试科目详情。主要有设置科目主观题/客观题分数、设置客观题答案，设置答题卡模板，分配科目评卷人员",
@@ -236,11 +230,11 @@
                 },
                 {
                     "title": "开发环境及开发工具",
-                    "content": ["Win7", "VScode", "Idea", "Chrome", "Jenkins", "Maven", "Docker", "Xshell", "Postman", "Git", "Nginx", "Mysql"]
+                    "content": ["VScode", "Chrome", "Jenkins", "Docker", "Xshell", "Postman", "Git", "Nginx"]
                 },
                 {
                     "title": "运行环境",
-                    "content": ["CentOS7", "Docker", "JDK8", "Tomcat8", "Zimg", "SSDB", "Redis", "Mysql", "Nginx", "CAS"]
+                    "content": ["CentOS7", "Docker", "JDK8", "Tomcat8", "Zimg", "SSDB", "Redis", "Nginx", "CAS"]
                 }
             ]
         },
@@ -268,9 +262,8 @@
                 {
                     "title": "负责的功能模块",
                     "content": [
-                        "根据UI设计师提供的设计稿重构2.0产品，1:1还原设计稿输出前端页面",
                         "用户登录。通过教育云平台单点登录系统，再根据教育云系统的用户角色路由到不同的用户界面",
-                        "考试列表。根据用户角色渲染参与的考试列表(正在阅卷的考试，刚创建的考试，评阅完成的考试)",
+                        "考试列表。根据用户角色渲染参与的考试列表",
                         "创建考试。考试分单科考试与多科考试，根据考试类型不同分周练，月考，期中期末考等等",
                         "考试详情。主要展示考试时间、考试创建人、考试名称。可以设置考试名称、考生管理、考生管理员、阅卷老师。可以增加/删除考试科目。",
                         "考试科目详情。主要有设置科目主观题/客观题分数、设置客观题答案，设置答题卡模板，分配科目评卷人员",
@@ -287,11 +280,11 @@
                 },
                 {
                     "title": "开发环境及开发工具",
-                    "content": ["Win7", "VScode", "Idea", "Chrome", "Jenkins", "Maven", "Docker", "Xshell", "Postman", "Git", "Nginx", "Mysql"]
+                    "content": ["VScode", "Chrome", "Jenkins", "Docker", "Xshell", "Postman", "Git", "Nginx"]
                 },
                 {
                     "title": "运行环境",
-                    "content": ["CentOS7", "Docker", "JDK8", "Tomcat8", "Zimg", "SSDB", "Redis", "Mysql", "Nginx", "CAS"]
+                    "content": ["CentOS7", "Docker", "JDK8", "Tomcat8", "Zimg", "SSDB", "Redis", "Nginx", "CAS"]
                 }
             ]
         },
@@ -319,9 +312,8 @@
                 {
                     "title": "负责的功能模块",
                     "content": [
-                        "根据UI设计师提供的设计稿重构2.0产品，1:1还原设计稿输出前端页面",
                         "用户登录。通过教育云平台单点登录系统，再根据教育云系统的用户角色路由到不同的用户界面",
-                        "考试列表。根据用户角色渲染参与的考试列表(正在阅卷的考试，刚创建的考试，评阅完成的考试)",
+                        "考试列表。根据用户角色渲染参与的考试列表",
                         "创建考试。考试分单科考试与多科考试，根据考试类型不同分周练，月考，期中期末考等等",
                         "考试详情。主要展示考试时间、考试创建人、考试名称。可以设置考试名称、考生管理、考生管理员、阅卷老师。可以增加/删除考试科目。",
                         "考试科目详情。主要有设置科目主观题/客观题分数、设置客观题答案，设置答题卡模板，分配科目评卷人员",
@@ -338,11 +330,11 @@
                 },
                 {
                     "title": "开发环境及开发工具",
-                    "content": ["Win7", "VScode", "Chrome", "Idea", "Jenkins", "Maven", "Docker", "Xshell", "Postman", "Git", "Nginx", "Mysql"]
+                    "content": ["VScode", "Chrome", "Jenkins", "Docker", "Xshell", "Postman", "Git", "Nginx"]
                 },
                 {
                     "title": "运行环境",
-                    "content": ["CentOS7", "Docker", "JDK8", "Tomcat8", "Zimg", "SSDB", "Redis", "Mysql", "Nginx", "CAS"]
+                    "content": ["CentOS7", "Docker", "JDK8", "Tomcat8", "Zimg", "SSDB", "Redis", "Nginx", "CAS"]
                 }
             ]
         },
@@ -369,7 +361,7 @@
                     "title": "负责的功能模块",
                     "content": [
                         "用户登录。根据不同的用户角色路由到各自登录界面",
-                        "考试列表。根据用户角色渲染用户参与的考试列表(正在进行阅卷的，刚创建的考试，评阅完成的考试)",
+                        "考试列表。根据用户角色渲染用户参与的考试列表",
                         "创建考试。考试分单科考试与多科考试，根据考试类型不同分周练，月考，期中期末考等等",
                         "考试详情。主要有考试科目、考生、阅卷人员等信息",
                         "科目详情。主要有设置参考学生名单（文科/理科/所有考生），分数设定（客观题/主观题给分点）。评卷人员分配，答题卡异常处理",
@@ -386,11 +378,11 @@
                 },
                 {
                     "title": "开发环境及开发工具",
-                    "content": ["Win7", "VScode", "Chrome", "Idea", "Jenkins", "Maven", "Docker", "Xshell", "Postman", "Git", "Nginx", "Mysql"]
+                    "content": ["VScode", "Chrome", "Jenkins", "Docker", "Xshell", "Postman", "Git", "Nginx"]
                 },
                 {
                     "title": "运行环境",
-                    "content": ["CentOS7", "Docker", "JDK8", "Tomcat8", "Zimg", "Mysql", "Nginx", "CAS"]
+                    "content": ["CentOS7", "Docker", "JDK8", "Tomcat8", "Zimg", "Nginx", "CAS"]
                 }
             ]
         }
