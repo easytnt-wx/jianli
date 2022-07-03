@@ -7,7 +7,7 @@
                 <header class="header">
                     <div class="header-box">
                         <div class="avatar wow inShow no-print">
-                            <img src="../../public/img/user.jpg" alt="logo" class="img-responsive" />
+                            <img src="../../public/img/user.png" alt="logo" class="img-responsive" />
                         </div>
                         <h1 class="name text-center wow inShow no-print">{{ userInfo.nickname }}</h1>
                         <p class="text-center name">{{ userInfo.jobs }}</p>
