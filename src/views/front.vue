@@ -160,7 +160,7 @@
                                     <div class="description">{{ item.intro }}</div>
                                 </div>
                                 <div class="col-md-7">
-                                    <div class="content">{{ item.description }}</div>
+                                    <div class="content mg-bottom-12">{{ item.description }}</div>
                                     <div class="tips" v-for="tip in item.tips" :key="tip.title">
                                         <b>{{ tip.title }}</b>
                                         <ul>
@@ -204,15 +204,19 @@
                                     <div class="description">{{ item.intro }}</div>
                                 </div>
                                 <div class="col-md-7">
-                                    <div class="content">{{ item.description }}</div>
-                                    <div class="tips" v-for="tip in item.tips" :key="tip.title">
+                                    <div class="content mg-bottom-12">{{ item.description }}</div>
+                                    <div class="tips mg-bottom-8">
+                                        <b>{{ item.results.title }}</b>
+                                        <div class="content">{{ item.results.content }}</div>
+                                    </div>
+                                    <div class="tips mg-bottom-8" v-for="tip in item.tips" :key="tip.title">
                                         <b>{{ tip.title }}</b>
                                         <ul>
                                             <li v-for="list in tip.content" :key="list">{{ list }}</li>
                                         </ul>
                                     </div>
 
-                                    <div class="tips" v-for="mdl in item.productmodule" :key="mdl.title">
+                                    <div class="tips mg-bottom-8" v-for="mdl in item.productmodule" :key="mdl.title">
                                         <b>{{ mdl.title }}</b>
                                         <ul>
                                             <li v-for="list in mdl.content" :key="list">{{ list }}</li>

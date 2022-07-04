@@ -1,66 +1,78 @@
-html,body,header,section,div,address,p{
-  box-sizing: border-box;
-  margin:0;
-  padding:0;
+html,
+body,
+header,
+section,
+div,
+address,
+p {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-html{
-  font-size: 14px;
-  min-height: 100%;
+html {
+    font-size: 14px;
+    min-height: 100%;
 }
-body{
-  font-size:1rem;
-  font-family: 'microsoft yahei','Helvetica Neue',Helvetica,Arial,sans-serif;
-  background: $bg1;
-  color: $color1;
+body {
+    font-size: 1rem;
+    font-family: 'microsoft yahei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: $bg1;
+    color: $color1;
 }
-h2{
-  font-size: 4rem;
-  font-weight: 200;
-  margin: 0 0 1rem;
+h2 {
+    font-size: 4rem;
+    font-weight: 200;
+    margin: 0 0 1rem;
 }
-.img-responsive{
-  max-width:100%;
-  height:auto;
-  display: block;
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
-.text-center{
-  text-align: center;
+.text-center {
+    text-align: center;
 }
-.tit{
-  display: inline-block;
-  line-height: 25px;
-  height: 25px;
-  padding: 1px 14px;
-  background-color: $light;
-  border-radius: 15px;
-  color: #fff;
-  margin: 6px 4px;
+.tit {
+    display: inline-block;
+    line-height: 25px;
+    height: 25px;
+    padding: 1px 14px;
+    background-color: $light;
+    border-radius: 15px;
+    color: #fff;
+    margin: 6px 4px;
 }
-.mg5{
-  margin: 5px;
+.mg5 {
+    margin: 5px;
 }
-.text-light{
-  color: $light;
+.mg-bottom-8 {
+    margin-bottom: 8px;
 }
-.hide{
-  display: none;
+.mg-bottom-12 {
+    margin-bottom: 12px;
 }
-.progress{
-  position: relative;
-  background: $border;
-  height: 5px;
-  .progress-bar{
-    height:100%;
-    background: $light;
-  }
+.text-light {
+    color: $light;
+}
+.hide {
+    display: none;
+}
+.progress {
+    position: relative;
+    background: $border;
+    height: 5px;
+    .progress-bar {
+        height: 100%;
+        background: $light;
+    }
 }
 
 /* loading */
 body {
-  background: $bg1;
+    background: $bg1;
 }
 .loading {
-  position: fixed;
-  top: 45%;
-  left: 50%;
+    position: fixed;
+    top: 45%;
+    left: 50%;
 }
