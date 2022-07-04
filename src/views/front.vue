@@ -53,10 +53,13 @@
                                     </div>
                                 </div>
                                 <!-- <div class="col-md-6 col-lg-3">
-                  <div class="item wow inShow" data-wow-delay="0.5s" :href="'mailto:'+userInfo.email">
-                    <P>学历 : <span>{{userInfo.education}}</span></P>
-                  </div>
-                </div> -->
+                                    <div class="item wow inShow" data-wow-delay="0.5s" :href="'mailto:' + userInfo.email">
+                                        <P>
+                                            学历 :
+                                            <span>{{ userInfo.education }}</span>
+                                        </P>
+                                    </div>
+                                </div> -->
                             </div>
                             <div class="row">
                                 <div class="col-md-6 col-lg-3">
@@ -379,6 +382,10 @@
                     skill: [],
                     project: [
                         {
+                            results: {
+                                title: '',
+                                content: ''
+                            },
                             tips: {
                                 title: '',
                                 content: []
