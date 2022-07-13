@@ -52,14 +52,14 @@
                                         </P>
                                     </div>
                                 </div>
-                                <!-- <div class="col-md-6 col-lg-3">
+                                <div class="col-md-6 col-lg-3">
                                     <div class="item wow inShow" data-wow-delay="0.5s" :href="'mailto:' + userInfo.email">
                                         <P>
                                             学历 :
                                             <span>{{ userInfo.education }}</span>
                                         </P>
                                     </div>
-                                </div> -->
+                                </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6 col-lg-3">
@@ -131,55 +131,12 @@
                     <div class="intro">
                         <p v-for="(intro, idx) in userInfo.intro.content" :key="idx" v-html="intro"></p>
                     </div>
-                    <div class="technology">
+                    <!-- <div class="technology">
                         <p>{{ userInfo.intro.technology.title }}</p>
                         <p class="mg5">
                             <span class="tit" v-for="item in userInfo.intro.technology.content" :key="item">{{ item }}</span>
                         </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section">
-            <div class="container">
-                <div class="section-bg section-header-bg"></div>
-                <div class="section-bg section-content-bg"></div>
-                <header class="header">
-                    <div class="content-box">
-                        <h2 class="title">
-                            工作经验&nbsp;/&nbsp;
-                            <small>Experience</small>
-                        </h2>
-                        <div class="description">从业经历介绍</div>
-                    </div>
-                </header>
-                <div class="section-content">
-                    <div class="experience">
-                        <div class="item" v-for="item in userInfo.experience" :key="item.title">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <div class="time">{{ item.time }}</div>
-                                    <div class="title">{{ item.title }}</div>
-                                    <div class="description">{{ item.intro }}</div>
-                                </div>
-                                <div class="col-md-7">
-                                    <div class="content mg-bottom-12">{{ item.description }}</div>
-                                    <div class="tips" v-for="tip in item.tips" :key="tip.title">
-                                        <b>{{ tip.title }}</b>
-                                        <ul>
-                                            <li v-for="list in tip.content" :key="list">{{ list }}</li>
-                                        </ul>
-                                    </div>
-                                    <div class="technology" v-for="tech in item.technology" :key="tech.title">
-                                        <b>{{ tech.title }}</b>
-                                        <ul class="inline">
-                                            <li v-for="techItem in tech.content" :key="techItem">{{ techItem }}</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -226,10 +183,54 @@
                                         </ul>
                                     </div>
 
-                                    <div class="technology" v-for="tech in item.technology" :key="tech.title">
+                                    <!-- <div class="technology" v-for="tech in item.technology" :key="tech.title">
                                         <b>{{ tech.title }}</b>
                                         <ul class="inline">
                                             <li v-for="(techItem, techItemIndex) in tech.content" :key="techItemIndex">{{ techItem }}</li>
+                                        </ul>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-bg section-header-bg"></div>
+                <div class="section-bg section-content-bg"></div>
+                <header class="header">
+                    <div class="content-box">
+                        <h2 class="title">
+                            工作经验&nbsp;/&nbsp;
+                            <small>Experience</small>
+                        </h2>
+                        <div class="description">从业经历介绍</div>
+                    </div>
+                </header>
+                <div class="section-content">
+                    <div class="experience">
+                        <div class="item" v-for="item in userInfo.experience" :key="item.title">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="time">{{ item.time }}</div>
+                                    <div class="title">{{ item.title }}</div>
+                                    <div class="description">{{ item.intro }}</div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="content mg-bottom-12">{{ item.description }}</div>
+                                    <div class="tips" v-for="tip in item.tips" :key="tip.title">
+                                        <b>{{ tip.title }}</b>
+                                        <ul>
+                                            <li v-for="list in tip.content" :key="list">{{ list }}</li>
+                                        </ul>
+                                    </div>
+                                    <div class="technology" v-for="tech in item.technology" :key="tech.title">
+                                        <b>{{ tech.title }}</b>
+                                        <ul class="inline">
+                                            <li v-for="techItem in tech.content" :key="techItem">{{ techItem }}</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -239,7 +240,8 @@
                 </div>
             </div>
         </section>
-        <section class="section">
+
+        <!-- <section class="section">
             <div class="container">
                 <div class="section-bg section-header-bg"></div>
                 <div class="section-bg section-content-bg"></div>
@@ -268,7 +270,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <section class="section">
             <div class="container">
                 <div class="section-bg section-header-bg"></div>
