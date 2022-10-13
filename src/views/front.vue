@@ -354,6 +354,12 @@
                 </div>
             </div>
         </section>
+        <section class="section no-print">
+            <div class="beian">
+                备案号：
+                <a href="http://beian.miit.gov.cn/" target="_blank">湘ICP备2022003904号-1</a>
+            </div>
+        </section>
     </div>
 </template>
 
