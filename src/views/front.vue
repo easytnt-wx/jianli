@@ -30,7 +30,7 @@
                                     <div class="item wow inShow" data-wow-delay="0.45s">
                                         <P>
                                             年龄 :
-                                            <span>{{ calcDate(userInfo.birthday) }}</span>
+                                            <span>{{ calcAge(userInfo.birthday) }}</span>
                                         </P>
                                     </div>
                                 </div>
@@ -409,6 +409,24 @@
                 }
             }
         },
+        computed: {
+            calcAge() {
+                return function (birthday) {
+                    if (!birthday) {
+                        return 0
+                    }
+                    let birthdayDate = new Date(birthday)
+                    let todyDate = new Date()
+                    let nowMonth = todyDate.getMonth()
+                    let birMonth = birthdayDate.getMonth()
+                    if (nowMonth < birMonth) {
+                        return todyDate.getYear() - birthdayDate.getYear() - 1
+                    } else {
+                        return todyDate.getYear() - birthdayDate.getYear()
+                    }
+                }
+            }
+        },
         created() {
             var self = this
             this.$http.get('resume.json').then(res => {
@@ -420,6 +438,10 @@
             calcDate(birthday) {
                 let birthdayDate = new Date(birthday)
                 let todyDate = new Date()
+                let nowMonth = todyDate.getMonth()
+                let birMonth = birthdayDate.getMonth()
+                console.log(nowMonth)
+                console.log(birMonth)
                 return todyDate.getYear() - birthdayDate.getYear()
             }
         }
