@@ -120,10 +120,7 @@
                 <div class="section-bg section-content-bg"></div>
                 <header class="header">
                     <div class="content-box">
-                        <h2 class="title">
-                            个人简介&nbsp;/&nbsp;
-                            <small>Personal Profile</small>
-                        </h2>
+                        <h2 class="title">个人简介</h2>
                         <div class="description">简单介绍本人的基本情况</div>
                     </div>
                 </header>
@@ -147,10 +144,7 @@
                 <div class="section-bg section-content-bg"></div>
                 <header class="header">
                     <div class="content-box">
-                        <h2 class="title">
-                            项目经验&nbsp;/&nbsp;
-                            <small>Experience</small>
-                        </h2>
+                        <h2 class="title">项目经验</h2>
                         <div class="description">简述做过的一些项目</div>
                     </div>
                 </header>
@@ -203,10 +197,7 @@
                 <div class="section-bg section-content-bg"></div>
                 <header class="header">
                     <div class="content-box">
-                        <h2 class="title">
-                            工作经验&nbsp;/&nbsp;
-                            <small>Experience</small>
-                        </h2>
+                        <h2 class="title">工作经历</h2>
                         <div class="description">从业经历介绍</div>
                     </div>
                 </header>
@@ -271,16 +262,14 @@
                 </div>
             </div>
         </section> -->
-        <section class="section">
+
+        <!-- <section class="section">
             <div class="container">
                 <div class="section-bg section-header-bg"></div>
                 <div class="section-bg section-content-bg"></div>
                 <header class="header">
                     <div class="content-box">
-                        <h2 class="title">
-                            常逛网站论坛&nbsp;/&nbsp;
-                            <small>Usually</small>
-                        </h2>
+                        <h2 class="title">常逛网站论坛</h2>
                         <div class="description">经常逛的技术相关网站</div>
                     </div>
                 </header>
@@ -301,17 +290,15 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
+
         <section class="section no-print">
             <div class="container">
                 <div class="section-bg section-header-bg"></div>
                 <div class="section-bg section-content-bg"></div>
                 <header class="header">
                     <div class="content-box">
-                        <h2 class="title">
-                            联系方式&nbsp;/&nbsp;
-                            <small>Contact</small>
-                        </h2>
+                        <h2 class="title">联系方式</h2>
                         <div class="description">通过这些信息可以联系到我</div>
                     </div>
                 </header>
@@ -429,7 +416,7 @@
         },
         created() {
             var self = this
-            this.$http.get('resume.json').then(res => {
+            this.$http.get('jianli_data_202403.json').then(res => {
                 self.userInfo = res.data
                 this.$parent.loading = true
             })
