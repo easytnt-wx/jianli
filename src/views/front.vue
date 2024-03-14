@@ -28,36 +28,36 @@
                             <div class="row">
                                 <div class="col-md-6 col-lg-3">
                                     <div class="item wow inShow" data-wow-delay="0.45s">
-                                        <P>
+                                        <p>
                                             年龄 :
                                             <span>{{ calcAge(userInfo.birthday) }}</span>
-                                        </P>
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-3">
                                     <a class="item wow inShow" data-wow-delay="0.55s" :href="userInfo.website" target="_blank">
-                                        <P>
+                                        <p>
                                             工作经验 :
                                             <span>{{ userInfo.workages }}年</span>
-                                        </P>
+                                        </p>
                                     </a>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6 col-lg-3">
                                     <div class="item wow inShow" data-wow-delay="0.3s">
-                                        <P>
+                                        <p>
                                             专业 :
                                             <span>{{ userInfo.professional }}</span>
-                                        </P>
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-3">
                                     <div class="item wow inShow" data-wow-delay="0.5s" :href="'mailto:' + userInfo.email">
-                                        <P>
+                                        <p>
                                             学历 :
                                             <span>{{ userInfo.education }}</span>
-                                        </P>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -89,7 +89,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
+                            <!-- <div class="row">
                                 <div class="col-md-6 col-lg-6">
                                     <a class="item wow inShow" data-wow-delay="0.7s" :href="userInfo.website" target="_blank">
                                         <p>
@@ -108,7 +108,7 @@
                                         </p>
                                     </a>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -120,7 +120,7 @@
                 <div class="section-bg section-content-bg"></div>
                 <header class="header">
                     <div class="content-box">
-                        <h2 class="title">个人简介</h2>
+                        <h2 class="title">个人优势</h2>
                         <div class="description">简单介绍本人的基本情况</div>
                     </div>
                 </header>
@@ -134,59 +134,6 @@
                             <span class="tit" v-for="item in userInfo.intro.technology.content" :key="item">{{ item }}</span>
                         </p>
                     </div> -->
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="container">
-                <div class="section-bg section-header-bg"></div>
-                <div class="section-bg section-content-bg"></div>
-                <header class="header">
-                    <div class="content-box">
-                        <h2 class="title">项目经验</h2>
-                        <div class="description">简述做过的一些项目</div>
-                    </div>
-                </header>
-                <div class="section-content">
-                    <div class="experience">
-                        <div class="item" v-for="item in userInfo.project" :key="item.title">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <div class="time">{{ item.time }}</div>
-                                    <div class="title">{{ item.title }}</div>
-                                    <div class="description">{{ item.intro }}</div>
-                                </div>
-                                <div class="col-md-7">
-                                    <div class="content mg-bottom-12">{{ item.description }}</div>
-                                    <div class="tips mg-bottom-8">
-                                        <b>{{ item.results.title }}</b>
-                                        <div class="content">{{ item.results.content }}</div>
-                                    </div>
-                                    <div class="tips mg-bottom-8" v-for="tip in item.tips" :key="tip.title">
-                                        <b>{{ tip.title }}</b>
-                                        <ul>
-                                            <li v-for="list in tip.content" :key="list">{{ list }}</li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="tips mg-bottom-8" v-for="mdl in item.productmodule" :key="mdl.title">
-                                        <b>{{ mdl.title }}</b>
-                                        <ul>
-                                            <li v-for="list in mdl.content" :key="list">{{ list }}</li>
-                                        </ul>
-                                    </div>
-
-                                    <!-- <div class="technology" v-for="tech in item.technology" :key="tech.title">
-                                        <b>{{ tech.title }}</b>
-                                        <ul class="inline">
-                                            <li v-for="(techItem, techItemIndex) in tech.content" :key="techItemIndex">{{ techItem }}</li>
-                                        </ul>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -214,9 +161,9 @@
                                     <div class="content mg-bottom-12">{{ item.description }}</div>
                                     <div class="tips" v-for="tip in item.tips" :key="tip.title">
                                         <b>{{ tip.title }}</b>
-                                        <ul>
+                                        <ol>
                                             <li v-for="list in tip.content" :key="list">{{ list }}</li>
-                                        </ul>
+                                        </ol>
                                     </div>
                                     <div class="technology" v-for="tech in item.technology" :key="tech.title">
                                         <b>{{ tech.title }}</b>
@@ -224,6 +171,62 @@
                                             <li v-for="techItem in tech.content" :key="techItem">{{ techItem }}</li>
                                         </ul>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-bg section-header-bg"></div>
+                <div class="section-bg section-content-bg"></div>
+                <header class="header">
+                    <div class="content-box">
+                        <h2 class="title">项目经历</h2>
+                        <div class="description">简述做过的一些项目</div>
+                    </div>
+                </header>
+                <div class="section-content">
+                    <div class="experience">
+                        <div class="item" v-for="item in userInfo.project" :key="item.title">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="time">{{ item.time }}</div>
+                                    <div class="title">{{ item.title }}</div>
+                                    <div class="description">{{ item.intro }}</div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="content mg-bottom-12">{{ item.description }}</div>
+
+                                    <div class="tips mg-bottom-8" v-for="tip in item.tips" :key="tip.title">
+                                        <b>{{ tip.title }}</b>
+                                        <div class="content" v-for="list in tip.content" :key="list">{{ list }}</div>
+                                    </div>
+
+                                    <div class="tips mg-bottom-8" v-for="mdl in item.productmodule" :key="mdl.title">
+                                        <b>{{ mdl.title }}</b>
+                                        <ol>
+                                            <li v-for="(list, idx) in mdl.content" :key="idx">
+                                                <p>{{ list.tit }}</p>
+                                                <p v-for="(tip, idxx) in list.body" :key="idxx">{{ tip }}</p>
+                                            </li>
+                                        </ol>
+                                    </div>
+
+                                    <div class="tips mg-bottom-8">
+                                        <b>{{ item.results.title }}</b>
+                                        <div class="content">{{ item.results.content }}</div>
+                                    </div>
+
+                                    <!-- <div class="technology" v-for="tech in item.technology" :key="tech.title">
+                                        <b>{{ tech.title }}</b>
+                                        <ul class="inline">
+                                            <li v-for="(techItem, techItemIndex) in tech.content" :key="techItemIndex">{{ techItem }}</li>
+                                        </ul>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -292,7 +295,7 @@
             </div>
         </section> -->
 
-        <section class="section no-print">
+        <!-- <section class="section no-print">
             <div class="container">
                 <div class="section-bg section-header-bg"></div>
                 <div class="section-bg section-content-bg"></div>
@@ -340,7 +343,8 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
+
         <section class="section no-print">
             <div class="beian">
                 备案号：
@@ -416,7 +420,7 @@
         },
         created() {
             var self = this
-            this.$http.get('jianli_data_202403.json').then(res => {
+            this.$http.get('jianli_data_20240314.json').then(res => {
                 self.userInfo = res.data
                 this.$parent.loading = true
             })

@@ -10,6 +10,11 @@ export default new Router({
             path: '/',
             name: 'front',
             component: () => import('@/views/front')
+        },
+        {
+            path: '/template01',
+            name: 'template01',
+            component: () => import('@/views/template01')
         }
     ]
 })
